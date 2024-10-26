@@ -95,7 +95,7 @@ class DataValidation:
                 self.data_validation_config.valid_test_file_path, index=False, header=True
             )
 
-            dataValidationArtifact = DataValidationArtifact(
+            data_validation_artifact = DataValidationArtifact(
                 validation_status=status,
                 valid_train_file_path=self.data_validation_config.valid_train_file_path,
                 valid_test_file_path=self.data_validation_config.valid_test_file_path,
@@ -103,7 +103,7 @@ class DataValidation:
                 invalid_test_file_path=None,
                 drift_report_file_path=self.data_validation_config.drift_report_file_path
             )
-            return dataValidationArtifact
+            return data_validation_artifact
 
 
 
