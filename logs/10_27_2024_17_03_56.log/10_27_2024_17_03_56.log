@@ -1,0 +1,35 @@
+[ 2024-10-27 17:03:58,048 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-10-27 17:03:58,051 ] 107 dagshub - INFO - Accessing as vedugpt77
+[ 2024-10-27 17:03:58,345 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vedugpt77/NetworkSecurity "HTTP/1.1 200 OK"
+[ 2024-10-27 17:03:58,347 ] 107 dagshub - INFO - Initialized MLflow to track repo "vedugpt77/NetworkSecurity"
+[ 2024-10-27 17:03:58,347 ] 107 dagshub - INFO - Repository vedugpt77/NetworkSecurity initialized!
+[ 2024-10-27 17:04:12,608 ] 37 root - INFO - Initiating Data Ingestion
+[ 2024-10-27 17:04:13,818 ] 63 root - INFO - Data split into train and test
+[ 2024-10-27 17:04:13,818 ] 65 root - INFO - Exiting split_data_into_train_test of DataIngestion class
+[ 2024-10-27 17:04:13,818 ] 69 root - INFO - Created directory for training data
+[ 2024-10-27 17:04:13,847 ] 73 root - INFO - Data saved into training and testing files
+[ 2024-10-27 17:04:13,847 ] 40 root - INFO - Completed Data Ingestion and Artifact: DataIngestionArtifact(trained_file_path='Artifacts/10_27_2024_17_03_57/data_ingestion/ingested/train.csv', test_file_path='Artifacts/10_27_2024_17_03_57/data_ingestion/ingested/test.csv')
+[ 2024-10-27 17:04:13,851 ] 50 root - INFO - Initiating Data Validation
+[ 2024-10-27 17:04:13,861 ] 31 root - INFO - Number of columns in schema: 2
+[ 2024-10-27 17:04:13,861 ] 32 root - INFO - Number of columns in dataframe: 31
+[ 2024-10-27 17:04:13,861 ] 31 root - INFO - Number of columns in schema: 2
+[ 2024-10-27 17:04:13,861 ] 32 root - INFO - Number of columns in dataframe: 31
+[ 2024-10-27 17:04:13,942 ] 52 root - INFO - Completed Data Validation and Artifact: DataValidationArtifact(validation_status=None, valid_train_file_path='Artifacts/10_27_2024_17_03_57/data_validation/valid/train.csv', valid_test_file_path='Artifacts/10_27_2024_17_03_57/data_validation/valid/test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts/10_27_2024_17_03_57/data_validation/drift_report/report.yaml')
+[ 2024-10-27 17:04:13,942 ] 62 root - INFO - Initiating Data Transformation
+[ 2024-10-27 17:04:13,942 ] 53 root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+[ 2024-10-27 17:04:13,942 ] 55 root - INFO - Initiating Data Transformation
+[ 2024-10-27 17:04:13,952 ] 43 root - INFO - Entered the get_transformed_data_object method of DataTransformation class
+[ 2024-10-27 17:04:13,956 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 17:04:13,957 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 17:04:13,957 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 17:04:13,957 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 17:04:13,958 ] 64 root - INFO - Completed Data Transformation and Artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts/10_27_2024_17_03_57/data_transformation/transformation_object/preprocessor.pkl', transformed_train_file_path='Artifacts/10_27_2024_17_03_57/data_transformation/transformed_data/train.npy', transformed_test_file_path='Artifacts/10_27_2024_17_03_57/data_transformation/transformed_data/test.npy')
+[ 2024-10-27 17:04:13,958 ] 74 root - INFO - Initiating Model Training
+[ 2024-10-27 17:10:23,738 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 17:10:23,743 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 17:10:23,743 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-10-27 17:10:23,749 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-10-27 17:10:23,749 ] 120 root - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/10_27_2024_17_03_57/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9915521628498728), precision_score=np.float64(0.9894373349583587), recall_score=np.float64(0.9936760505915953)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9711576451995259), precision_score=np.float64(0.963166144200627), recall_score=np.float64(0.9792828685258964)))
+[ 2024-10-27 17:10:23,750 ] 76 root - INFO - Completed Model Training and Artifact: None
+[ 2024-10-27 17:10:23,750 ] 104 root - INFO - Training Pipeline completed
+[ 2024-10-27 17:10:25,476 ] 107 root - INFO - Artifacts synced to S3
