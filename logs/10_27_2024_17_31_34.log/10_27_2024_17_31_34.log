@@ -1,5 +1,0 @@
-[ 2024-10-27 17:31:35,990 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2024-10-27 17:31:35,993 ] 107 dagshub - INFO - Accessing as vedugpt77
-[ 2024-10-27 17:31:36,180 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vedugpt77/NetworkSecurity "HTTP/1.1 200 OK"
-[ 2024-10-27 17:31:36,181 ] 107 dagshub - INFO - Initialized MLflow to track repo "vedugpt77/NetworkSecurity"
-[ 2024-10-27 17:31:36,182 ] 107 dagshub - INFO - Repository vedugpt77/NetworkSecurity initialized!
